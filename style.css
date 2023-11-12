@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "myFont";
+  src: url("font.ttf");
+}
+
+body {
+  background: black;
+  color: white;
+  font-family: "myFont";
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 8rem 4rem;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+
+  & > span {
+    cursor: pointer;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+#easterEgg {
+  opacity: 0;
+  user-select: none;
+  transition: opacity 0.5s;
+}

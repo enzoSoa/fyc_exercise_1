@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FYC exercise 1</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1># Félicitation <span id="bob">°U°</span></h1>
+    <h2>## Vous savez déployer un site web statique !</h2>
+    <p>Vous pouvez maintenant essayer de déployer ce site web avec Terraform et si c'est déjà le cas essayer de déployer un projet plus complexe.</p>
+    <p id="easterEgg">Il faut mettre 20/20 a notre FYC.</p>
+  </body>
+  <script>
+    const bob = document.getElementById('bob');
+    const easterEgg = document.getElementById('easterEgg');
+    let clickCount = 1;
+
+    bob.addEventListener("click", () => {
+      if (clickCount > 5) {
+        easterEgg.style.opacity = 1;
+        return;
+      }
+      clickCount++
+    })
+  </script>
+</html>
